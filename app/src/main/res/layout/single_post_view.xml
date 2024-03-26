@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+
+    >
+
+
+
+    <!--        Post Header-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/postImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/story1"
+            app:civ_border_color="#FF5722"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            app:civ_border_width="2dp"
+
+            />
+        <TextView
+
+            android:id="@+id/postUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/postImage"
+            android:text="@string/sam_altman"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sponsored"
+            android:layout_below="@+id/postUserName"
+            android:layout_toEndOf="@+id/postImage"
+            android:id="@+id/postSubTitle"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/more"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="10dp"
+
+            android:contentDescription="@string/todo"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <!--            Post Image-->
+
+
+    <ImageView
+        android:id="@+id/mainPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/story1"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/postHeartButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/red_heart"
+            />
+        <ImageView
+            android:id="@+id/postCommentButton"
+            android:layout_toRightOf="@+id/postHeartButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/chat"
+
+            android:layout_marginStart="20dp"
+            />
+        <ImageView
+            android:id="@+id/postShareButton"
+            android:layout_toRightOf="@id/postCommentButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/send"
+            android:layout_marginStart="20dp"
+            />
+        <ImageView
+            android:id="@+id/postSaveButton"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/save"
+            />
+    </RelativeLayout>
+
+    <!--        Show Likes Section-->
+
+    <TextView
+        android:id="@+id/likeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_100_likes"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/postCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/this_is_a_caption_of_this_post_which_we_have_created_in_the_android_studio"
+        android:padding="5dp"
+        android:textColor="#292929"
+        />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_16_comments"
+        android:textColor="#5F5F5F"
+        android:padding="5dp"
+        />
+
+    <View
+
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/singlePost"
+        android:layout_height="2dp"
+        android:background="#e2e2e2"
+        />
+
+
+</LinearLayout>

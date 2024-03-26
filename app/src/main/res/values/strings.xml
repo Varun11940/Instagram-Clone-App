@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">instagram_clone</string>
+    <string name="instagram">Instagram</string>
+    <string name="view_all_16_comments">View all 16 comments</string>
+    <string name="this_is_a_caption_of_this_post_which_we_have_created_in_the_android_studio">This is a caption of this post which we have created in the android studio</string>
+    <string name="_100_likes">100 Likes</string>
+    <string name="john">John</string>
+    <string name="alexander">Alexander</string>
+    <string name="pam">Pam</string>
+    <string name="drake">drake</string>
+    <string name="sam_altman">Sam Altman</string>
+    <string name="sponsored">Sponsored</string>
+    <string name="todo">TODO</string>
+    <string name="sam">Sam</string>
+</resources>
